@@ -1,2 +1,2 @@
-vendor_internal_prop(vendor_power_prop)
-type power_prop, property_type;
+# Mlipay
+type ifaa_prop, property_type;
