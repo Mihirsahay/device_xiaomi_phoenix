@@ -5,4 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/arrow_phoenix.mk
+    $(LOCAL_DIR)/ssos_phoenix.mk
+
+COMMON_LUNCH_CHOICES := \
+    ssos_phoenix-user \
+    ssos_phoenix-userdebug \
+    ssos_phoenix-eng
