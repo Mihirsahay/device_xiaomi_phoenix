@@ -15,18 +15,28 @@
 */
 -->
 <resources>
+    <!-- The padding on the side of the navigation bar. Must be greater than or equal to
+         navigation_extra_key_width -->
+    <dimen name="navigation_side_padding">85dp</dimen>
+
+    <dimen name="rounded_corner_content_padding">10dp</dimen>
+
     <!-- the padding on the top of the statusbar (usually 0) -->
     <dimen name="status_bar_padding_top">8dp</dimen>
 
+    <!-- the padding on the start of the statusbar -->
+    <dimen name="status_bar_padding_start">15dp</dimen>
+
     <!-- the padding on the end of the statusbar -->
-    <dimen name="status_bar_padding_end">0dp</dimen>
-    
-    <!-- Margin start of the system icons super container -->
-    <dimen name="system_icons_super_container_avatarless_margin_end">33px</dimen>
+    <dimen name="status_bar_padding_end">2dp</dimen>
 
-    <!-- end margin for multi user switch in collapsed quick settings -->
-    <dimen name="multi_user_switch_keyguard_margin">22px</dimen>
+    <!-- the padding on the start and the end of the statusbar -->
+    <dimen name="status_bar_extra_padding">8dp</dimen>
 
-    <!-- Margin on the left side of the carrier text on Keyguard -->
-    <dimen name="keyguard_carrier_text_margin">44px</dimen>
+    <!-- Padding on the start of the quick statusbar (not top-most statusbar) -->
+    <dimen name="qs_header_start_padding">15dp</dimen>
+
+    <!-- Padding on the end of the quick statusbar (not top-most statusbar) -->
+    <dimen name="qs_header_end_padding">15dp</dimen>
+
 </resources>
