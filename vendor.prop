@@ -13,3 +13,6 @@ ro.crypto.volume.filenames_mode=aes-256-cts
 # Display
 vendor.display.disable_idle_time_hdr=1
 vendor.display.disable_idle_time_video=1
+
+#Perf
+ro.vendor.perf.scroll_opt=true
