@@ -335,6 +335,9 @@ PRODUCT_PACKAGES += \
     libOmxVenc \
     libstagefrighthw
 
+# MiuiCamera
+$(call inherit-product-if-exists, vendor/xiaomi/miuicamera/config.mk)
+
 # Net
 PRODUCT_PACKAGES += \
     netutils-wrapper-1.0
