@@ -10,6 +10,8 @@ include device/xiaomi/sm6150-common/BoardConfigCommon.mk
 DEVICE_PATH := device/xiaomi/phoenix
 
 BUILD_BROKEN_DUP_RULES := true
+BUILD_BROKEN_USES_BUILD_COPY_HEADERS := true
+BUILD_BROKEN_VINTF_PRODUCT_COPY_FILES := true
 
 # Audio
 TARGET_PROVIDES_AUDIO_EXTNS := true
@@ -19,6 +21,9 @@ TARGET_OTA_ASSERT_DEVICE := phoenix,phoenixin
 
 # Kernel
 TARGET_KERNEL_CONFIG := phoenix_defconfig
+TARGET_COMPILE_WITH_MSM_KERNEL := true
+BOARD_KERNEL_IMAGE_NAME := Image.gz
+TARGET_USES_ION := true
 
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/hidl/manifest.xml
@@ -75,6 +80,10 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 
 # Sepolicy
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
+
+#Soong
+TARGET_BOARD_PLATFORM := sm6150
+BOARD_USES_QCOM_HARDWARE := true
 
 # Verified boot
 BOARD_AVB_VBMETA_SYSTEM := product system system_ext
